@@ -1,0 +1,189 @@
+//COLOURS
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+//STYLE
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $pale-blue;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    height: 85vh;
+    width: 90vw;
+
+    .wrapper-top {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+
+    .wrapper-bot {
+        position: relative;
+        padding: 0px 20px 0px 20px;
+
+        h1 {
+            margin: 20px 0px;
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 25px;
+            color: $desaturated-blue;
+        }
+    }
+
+    .tile {
+        background-color: $very-pale-blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0px 20px;
+        border-radius: 15px;
+
+        .wrapper-left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .info {
+                padding-left: 20px;
+                padding-right: 30px;
+                h4 {
+                    font-size: 14px;
+                    font-weight: 900;
+                }
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+        .wrapper-right {
+            a {
+                font-size: 13px;
+                font-weight: 700;
+            }
+        }
+        a {
+            text-decoration: underline;
+            color: $bright-blue;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin: 30px 0px 30px;
+        padding: 20px 0px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $bright-blue;
+        color: white;
+        font-weight: 900;
+        font-size: 15px;
+        box-shadow: 0px 10px 30px -10px $bright-blue;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: $desaturated-blue;
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 50px;
+    }
+
+}
+
+// HOVER STATE
+.container {
+    .wrapper-bot {
+        
+        .tile {
+            a:hover {
+                color: #766CF1;
+                text-decoration: none;
+            }
+        }
+        button:hover {
+            background-color: #766CF1;
+            cursor: pointer;
+        }
+        a:hover {
+            color: black;
+        }
+    }
+}
+
+//TAB VERSION
+
+@media screen and (min-width: 480px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: $pale-blue;
+    }
+
+    .container {
+        width: 80vw;
+        height: 90vh;
+        .wrapper-bot {
+            padding: 0px 50px 0px 50px;
+        }
+    }
+}
+
+// DESKTOP VERSION
+
+@media screen and (min-width: 720px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: $pale-blue;
+    }
+
+    .container {
+        width: 30vw;
+        height: 80vh;
+        .wrapper-bot {
+            padding: 0px 50px 0px 50px;
+        }
+    }
+}

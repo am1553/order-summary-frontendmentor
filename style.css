@@ -1,0 +1,188 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  height: 85vh;
+  width: 90vw;
+}
+
+.container .wrapper-top {
+  position: relative;
+}
+
+.container .wrapper-top img {
+  width: 100%;
+}
+
+.container .wrapper-bot {
+  position: relative;
+  padding: 0px 20px 0px 20px;
+}
+
+.container .wrapper-bot h1 {
+  margin: 20px 0px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.container .wrapper-bot p {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #7280a7;
+}
+
+.container .tile {
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 0px 20px;
+  border-radius: 15px;
+}
+
+.container .tile .wrapper-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .tile .wrapper-left .info {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.container .tile .wrapper-left .info h4 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.container .tile .wrapper-left p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.container .tile .wrapper-right a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.container .tile a {
+  text-decoration: underline;
+  color: #3829e0;
+}
+
+.container button {
+  width: 100%;
+  margin: 30px 0px 30px;
+  padding: 20px 0px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3829e0;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 10px 30px -10px #3829e0;
+          box-shadow: 0px 10px 30px -10px #3829e0;
+}
+
+.container a {
+  text-decoration: none;
+  color: #7280a7;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+.container .wrapper-bot .tile a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.container .wrapper-bot button:hover {
+  background-color: #766CF1;
+  cursor: pointer;
+}
+
+.container .wrapper-bot a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+  }
+  .container {
+    width: 80vw;
+    height: 90vh;
+  }
+  .container .wrapper-bot {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+  }
+  .container {
+    width: 30vw;
+    height: 80vh;
+  }
+  .container .wrapper-bot {
+    padding: 0px 50px 0px 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
